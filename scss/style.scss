@@ -2,9 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 
 // colors
-$bg-color: #01e08f;
-$link-color: #05386b;
-$heading-color: #edf5e1;
+$bg-color: #f5e6ca;
+$link-color: #f54748;
+$heading-color: #fb9300;
+$sub-heading-color: #343f56;
 
 // group of properties
 %flex-property {
@@ -36,7 +37,7 @@ a {
 }
 //  font style
 h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 900;
   color: $heading-color;
 }
@@ -51,7 +52,7 @@ p {
   color: $heading-color;
 }
 
-// nav style
+// nav style >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 nav {
   margin: 0.5rem 4rem;
   @extend %flex-property;
@@ -70,9 +71,59 @@ nav {
     padding: 0.6rem;
     border-radius: 0.2rem 1rem;
     font-size: 1.5rem;
+    color: $bg-color;
     &:hover {
       background-color: $link-color;
-      color: $heading-color;
     }
+  }
+}
+
+// hero section style >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+.hero_section {
+  margin: 3rem 4rem;
+  @extend %flex-property;
+  h1 {
+    margin-bottom: 1rem;
+    span {
+      color: $link-color;
+    }
+  }
+  h2 {
+    margin-bottom: 1rem;
+  }
+  a {
+    font-size: 2rem;
+    text-decoration: underline;
+  }
+  img {
+    width: 500px;
+  }
+}
+
+// making responsive
+
+$small: 300px;
+$medium: 900px;
+
+@media screen and (max-width: $small) {
+  nav {
+    ul {
+      display: none;
+    }
+  }
+  .hero_section {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+@media screen and (max-width: $medium) {
+  nav {
+    ul {
+      display: none;
+    }
+  }
+  .hero_section {
+    flex-direction: column;
+    text-align: center;
   }
 }
