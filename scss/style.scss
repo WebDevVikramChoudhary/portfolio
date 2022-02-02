@@ -1,0 +1,78 @@
+// font-family: 'Cairo', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+// colors
+$bg-color: #01e08f;
+$link-color: #05386b;
+$heading-color: #edf5e1;
+
+// group of properties
+%flex-property {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+// global style >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: $bg-color;
+}
+
+// link stle
+a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: $link-color;
+  transition: 0.5s;
+  &:hover {
+    color: $heading-color;
+  }
+}
+//  font style
+h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: $heading-color;
+}
+h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: $heading-color;
+}
+p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: $heading-color;
+}
+
+// nav style
+nav {
+  margin: 0.5rem 4rem;
+  @extend %flex-property;
+  .logo {
+    font-size: 2rem;
+    font-weight: 900;
+    color: $link-color;
+  }
+  ul {
+    @extend %flex-property;
+    list-style: none;
+    width: 25%;
+  }
+  .Contact {
+    background-color: $heading-color;
+    padding: 0.6rem;
+    border-radius: 0.2rem 1rem;
+    font-size: 1.5rem;
+    &:hover {
+      background-color: $link-color;
+      color: $heading-color;
+    }
+  }
+}

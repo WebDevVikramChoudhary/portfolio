@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+nav, nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #01e08f;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #05386b;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+a:hover {
+  color: #edf5e1;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #edf5e1;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #edf5e1;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #edf5e1;
+}
+
+nav {
+  margin: 0.5rem 4rem;
+}
+
+nav .logo {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #05386b;
+}
+
+nav ul {
+  list-style: none;
+  width: 25%;
+}
+
+nav .Contact {
+  background-color: #edf5e1;
+  padding: 0.6rem;
+  border-radius: 0.2rem 1rem;
+  font-size: 1.5rem;
+}
+
+nav .Contact:hover {
+  background-color: #05386b;
+  color: #edf5e1;
+}
+/*# sourceMappingURL=style.css.map */
