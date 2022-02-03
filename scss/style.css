@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
-nav, nav ul, .hero_section {
+nav, nav ul, #hero_section, #work_section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,54 +81,103 @@ nav .Contact:hover {
   background-color: #f54748;
 }
 
-.hero_section {
+#hero_section {
   margin: 3rem 4rem;
 }
 
-.hero_section h1 {
+#hero_section h1 {
   margin-bottom: 1rem;
 }
 
-.hero_section h1 span {
+#hero_section h1 span {
   color: #f54748;
 }
 
-.hero_section h2 {
+#hero_section h2 {
   margin-bottom: 1rem;
 }
 
-.hero_section a {
+#hero_section a {
   font-size: 2rem;
   text-decoration: underline;
 }
 
-.hero_section img {
+#hero_section img {
   width: 500px;
+}
+
+#work_section {
+  margin: 5rem 4rem;
+}
+
+#work_section h1 {
+  margin-bottom: 2rem;
+}
+
+#work_section p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+#work_section a {
+  font-size: 2rem;
+  text-decoration: underline;
+}
+
+#work_section img {
+  width: 600px;
+  padding: 2em;
 }
 
 @media screen and (max-width: 300px) {
   nav ul {
     display: none;
   }
-  .hero_section {
+  #hero_section {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    text-align: center;
+    text-align: start;
+  }
+  #work_section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: start;
+  }
+  #work_section img {
+    max-width: 200px;
   }
 }
 
 @media screen and (max-width: 900px) {
+  body {
+    margin: 1rem;
+    padding: 0.3em;
+    overflow: hidden;
+  }
   nav ul {
     display: none;
   }
-  .hero_section {
+  #hero_section {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    text-align: center;
+    text-align: start;
+  }
+  #work_section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: start;
+  }
+  #work_section img {
+    max-width: 500px;
   }
 }
 /*# sourceMappingURL=style.css.map */
